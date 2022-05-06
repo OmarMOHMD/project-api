@@ -1,0 +1,29 @@
+/*start main properties*/
+:root{
+    --hover-color: #55d5ff;
+    --hover-color-btn-blue: #277bcc;
+    --hover-color-btn-red: #d14579;
+    --form-bg-color1: #59cdf4;
+    --form-bg-color2: #b35e6c;
+    --btn-color1: #6699cc;
+    --btn-color2: #de7099;
+    --text-color: #ffffff;
+    --text-color1: #5aa1e2;
+    --text-color2: #de7099;
+    --box-bg1: #f2f2f2;
+    --box-bg2: #f9e3eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    outline: none;
+
+}
+
+/*end main properties*/
