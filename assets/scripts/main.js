@@ -19,28 +19,29 @@ function renderCompanies(compaines){
     })
 }
 
-function getCompanies() {
+async function getCompanies() {
     // Loader
-    loader.classList.remove('hidden');
-    fetch(`https://fakerapi.it/api/v1/companies`)
-    .then(res => res.json)
-    .then(data =>{
-        renderCompanies(data.data);
+    // loader.classList.remove('hidden');
+    const fetchData = await fetch(`https://fakerapi.it/api/v1/companies`)
+    fetchData
+    .json()
+    .then(({ data }) => {
+        console.log(data)
+        console.log('test git')
     })
-    .catch(error =>{
+    .catch(error => {
         console.log(error);
     })
-    .finally( () => {
+    .finally(() => {
         //remove
-        loader.classList.add('hidden');
+        // loader.classList.add('hidden');
     })
-
 }
 
 getCompanies();
 
 
-<svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
+{/* <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 100 100"
     enable-background="new 0 0 0 0" xml:space="preserve"
@@ -53,4 +54,4 @@ M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
             from="0 50 50" to="360 50 50"
             repeatCount="indefinite" />
     </path>
-</svg>
+</svg> */}
