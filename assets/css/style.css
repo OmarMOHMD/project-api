@@ -10,7 +10,7 @@
     box-sizing: border-box;
     font-family: inherit;
     outline: none;
-
+    box-sizing: border-box;
 }
 
 /*end main properties*/
@@ -132,11 +132,12 @@
     margin: 0 auto;
 }
 
-.personss ,.companyy ,.bookss{
+.personss ,.companyy ,.bookss {
     align-items: center;
     width: 300px;
     height: auto;
-    border-radius: 4px;
+    border-radius: 100px 0 0 0;
+    box-shadow: 10px 21px 35px 0px rgba(0, 0, 0, 0.521);
     background-color: #fff;
     text-align: center;
     margin: 20px;
@@ -144,7 +145,7 @@
     transition: 0.3s;
 }
 
-.personss:hover ,.companyy:hover ,.bookss:hover{
+.personss:hover ,.companyy:hover ,.bookss:hover {
     transform: scale(1.1);
     transition: .7s;
     cursor: pointer;
@@ -162,17 +163,17 @@
     background-position: center;
 }
 
-.person__info h1 ,.company__info h1 ,.book__info h1{
+.person__info h1 ,.company__info h1 ,.book__info h1 {
     color: #277BCC;
     font-size: 1.8rem;
     font-weight: 200;
 }
 
-.person__info span ,.company__info span ,.book__info span{
+.person__info span ,.company__info span ,.book__info span {
     display: flex;
     margin: 3px;
     align-items: center;
-    color: #0cfae6;
+    color: #85b8e4;
 }
 
 .person__info a ,.company__info a ,.book__info a {
