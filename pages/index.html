@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project js 1</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/Normalize.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="website provide fake informations about users ,companies and books to help developers">
+    <meta name="author" content="omar">
+    <meta name="keywords" content=" 'fake api' persons user Users companies books book company">
+    <title>Fake API</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/Normalize.css" />
 </head>
+
 <body>
-    <script src="../assets/scripts/main.js"></script>
-    <!-- <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">
-        <path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 
+
+    <h1 class="persons_heading">Users,Companies,Books..</h1>
+    <form onsubmit="preventDefault()" class="form_container">
+        <input class="companies_search" type="search" placeholder="Search..." oninput="searchPersons(event)"/>
+        <button type="submit" class="company_btn">Go</button>
+    </form> 
+    <!--  -->
+    <div class="loader hidden">
+        <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">
+            <path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 
     M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
-            <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
-                to="360 50 50" repeatCount="indefinite" />
-        </path>
-    </svg> -->
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
+    <section class="persons"></section>
+    <!--  -->
+    <div class="loader hidden">
+        <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">
+            <path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 
+    M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
+    <section class="companies"></section>
+    <!--  -->
+    <div class="loader hidden">
+        <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">
+            <path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 
+    M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
+    <section class="books"></section>
+<!--  -->
+    <script src="../assets/scripts/main.js"></script>
 </body>
+
 </html>

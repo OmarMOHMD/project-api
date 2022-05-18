@@ -1,29 +1,196 @@
 /*start main properties*/
-:root{
-    --hover-color: #55d5ff;
-    --hover-color-btn-blue: #277bcc;
-    --hover-color-btn-red: #d14579;
-    --form-bg-color1: #59cdf4;
-    --form-bg-color2: #b35e6c;
-    --btn-color1: #6699cc;
-    --btn-color2: #de7099;
-    --text-color: #ffffff;
-    --text-color1: #5aa1e2;
-    --text-color2: #de7099;
-    --box-bg1: #f2f2f2;
-    --box-bg2: #f9e3eb;
+:root {
+    --form-bg: #C4DDFF;
+    --btn-color: #85b8e4;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-style: none;
-    text-decoration: none;
-    color: inherit;
     font-family: inherit;
     outline: none;
 
 }
 
 /*end main properties*/
+
+/* start form design */
+.persons_heading {
+    color: #2b88a7;
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+    margin: 8px;
+}
+
+@media (max-width:600px){
+    .persons_heading{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+} 
+
+.form_container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    background-color: var(--form-bg);
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.521);
+    border-radius: 15px;
+    border: 4px solid rgb(255, 255, 255);
+    align-items: center;
+    /* justify-content: flex-start; */
+    justify-content:center ;
+    top: 10%;
+    gap: 10px;
+    z-index: 20;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5em;
+    width: 50%;
+}
+
+@media (max-width:830px) {
+    .form_container {
+        width: 60%;
+        height: 8rem;
+        top: 6%;
+    }
+
+    .company_btn {
+        flex: content;
+    }
+
+    .companies_search {
+        flex: content;
+    }
+
+}
+
+.companies_search {
+    padding: 16px 10px;
+    border: 1px solid rgb(53, 103, 173);
+    border-radius: 10px;
+    font-weight: 300;
+    height: 7vh;
+    /* width: 40%; */
+    margin-left: 5px;
+    font-style: italic;
+}
+
+@media (max-width:600px){
+    .companies_search{
+        font-size: 1rem;
+    }
+
+    .company_btn{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.companies_search:hover,
+.companies_search:focus {
+    border: 2px solid #277BCC;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+
+.company_btn {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.company_btn:hover ,
+.company_btn:focus {
+    background-color: #277BCC;
+    color: #dddddd;
+    transition: .5s;
+}
+
+/* end form design */
+
+/* start persons*/
+
+.persons , .companies ,.books {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(202, 206, 245, 0.225);
+    margin-top: 60px;
+}
+
+
+.section_persons ,.section_companies ,.section_books {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.personss ,.companyy ,.bookss{
+    align-items: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.personss:hover ,.companyy:hover ,.bookss:hover{
+    transform: scale(1.1);
+    transition: .7s;
+    cursor: pointer;
+}
+
+.person__poster img ,.company__poster img ,.book__poster img {
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    -webkit-background-size: cover;
+    background-size: contain;
+    background-position: center;
+}
+
+.person__info h1 ,.company__info h1 ,.book__info h1{
+    color: #277BCC;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.person__info span ,.company__info span ,.book__info span{
+    display: flex;
+    margin: 3px;
+    align-items: center;
+    color: #0cfae6;
+}
+
+.person__info a ,.company__info a ,.book__info a {
+    display: flex;
+    text-decoration:none;
+    color: #80b1de;
+}
+
+.person__info a:hover ,.company__info a:hover ,.book__info a:hover {
+    color: blue;
+    transition: 0.5s;
+}
+/* end persons*/
+
+/* loader style */
+.hidden {
+    display: none;
+}
+/*  end loader style*/
+
+/* End project 'faker api' html, css, js, git and github */
