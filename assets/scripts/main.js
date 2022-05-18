@@ -141,3 +141,4 @@ function searchPersons(event) {
 
     renderPersons(matchedPersons);
 }
+
