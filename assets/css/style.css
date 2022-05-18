@@ -142,7 +142,7 @@
     align-items: center;
     width: 300px;
     height: auto;
-    border-radius: 100px 0 0 0;
+    border-radius: 100px 0 100px 0;
     box-shadow: 10px 21px 35px 0px rgba(0, 0, 0, 0.521);
     background-color: #fff;
     text-align: center;
