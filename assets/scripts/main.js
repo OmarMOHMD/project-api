@@ -137,7 +137,7 @@ function preventDefault(event) {
 function searchPersons(event) {
     const searchInput = event.target;
 
-    const matchedPersons = persons.filter(person => person.name.toLowerCase.includes(searchInput.value));
+    const matchedPersons = persons.filter(person => person.name.toLowerCase().includes(searchInput.value));
 
     renderPersons(matchedPersons);
 }

@@ -14,7 +14,14 @@
 </head>
 
 <body>
-    <h1 class="persons_heading">Users,Companies,Books..</h1>
+    <header>
+        <nav>
+            <a class="persons_heading" href="#users">Users</a>
+            <a class="persons_heading" href="#compan">Companies</a>
+            <a class="persons_heading" href="#boook">Books..</a>
+        </nav>
+    </header>
+
     <form onsubmit="preventDefault()" class="form_container">
         <input class="companies_search" type="search" placeholder="Search..." oninput="searchPersons(event)"/>
         <button type="submit" class="company_btn">Go</button>
@@ -29,7 +36,7 @@
             </path>
         </svg>
     </div>
-    <section class="persons"></section>
+    <section class="persons" id="users"></section>
     <div class="loader hidden">
         <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">
@@ -40,7 +47,7 @@
             </path>
         </svg>
     </div>
-    <section class="companies"></section>
+    <section class="companies" id="compan"></section>
     <div class="loader hidden">
         <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">
@@ -51,7 +58,7 @@
             </path>
         </svg>
     </div>
-    <section class="books"></section>
+    <section class="books" id="boook"></section>
 
     <script src="../assets/scripts/main.js"></script>
 </body>
