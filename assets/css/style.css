@@ -16,6 +16,11 @@
 /*end main properties*/
 
 /* start form design */
+header {
+    background-color: #ddd;
+    padding: 20px;
+}
+
 .persons_heading {
     color: #2b88a7;
     font-size: 2rem;
@@ -57,13 +62,14 @@
     align-items: center;
     /* justify-content: flex-start; */
     justify-content:center ;
-    top: 10%;
+    top: 7%;
     gap: 10px;
     z-index: 20;
     left: 50%;
     transform: translateX(-50%);
     height: 5em;
     width: 50%;
+    position: fixed;
 }
 
 @media (max-width:830px) {
@@ -80,7 +86,15 @@
     .companies_search {
         flex: content;
     }
+}
 
+@media (max-width:1333px) {
+    .form_style {
+        margin: 150px;
+    }
+    .form_container {
+        top: 9%;
+    }
 }
 
 .companies_search {

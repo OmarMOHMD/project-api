@@ -16,7 +16,7 @@ function renderPersons(persons) {
                     <img src="${person.image}" alt="Person Poster" >
                 </figure>
                 <div class="person__info">
-                    <h1>${person.name}</h1>
+                    <h1>${person.firstname} ${person.lastname}</h1>
                     <span>${person.country}</span>
                     <span>${person.phone}</span>
                     <a href="${person.website}">Visit website</a>
@@ -137,7 +137,7 @@ function preventDefault(event) {
 function searchPersons(event) {
     const searchInput = event.target;
 
-    const matchedPersons = persons.filter(person => person.name.toLowerCase().includes(searchInput.value));
+    const matchedPersons = persons.filter(person => person.firstname.toLowerCase().includes(searchInput.value) || person.lastname.toLowerCase().includes(searchInput.value));
 
     renderPersons(matchedPersons);
 }
