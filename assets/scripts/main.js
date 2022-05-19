@@ -17,7 +17,7 @@ function renderPersons(persons) {
                 </figure>
                 <div class="person__info">
                     <h1>${person.firstname} ${person.lastname}</h1>
-                    <span>${person.country}</span>
+                    <span>${person.country} </span>
                     <span>${person.phone}</span>
                     <a href="${person.website}">Visit website</a>
                 </div>
@@ -77,7 +77,7 @@ await fetch(`${apiBaseURL}/persons?_quantity=20`)
     .then((data) => {
         persons = data.data;
         renderPersons(data.data);
-        console.log(data);
+        // console.log(data);
     })
     .catch((error) => {
         console.log(error);
@@ -138,7 +138,7 @@ function searchPersons(event) {
     const searchInput = event.target;
 
     const matchedPersons = persons.filter(person => person.firstname.toLowerCase().includes(searchInput.value) || person.lastname.toLowerCase().includes(searchInput.value));
-
+console.log(searchPersons);
     renderPersons(matchedPersons);
 }
 
