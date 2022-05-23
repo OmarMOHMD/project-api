@@ -17,7 +17,7 @@ function renderPersons(persons) {
                 </figure>
                 <div class="person__info">
                     <h1>${person.firstname} ${person.lastname}</h1>
-                    <span>${person.country} </span>
+                    <span>${person.email} </span>
                     <span>${person.phone}</span>
                     <a href="${person.website}">Visit website</a>
                 </div>
@@ -58,9 +58,9 @@ function renderBooks(books) {
                 <img src="${book.image}" alt="Book Poster" >
             </figure>
             <div class="book__info">
-                    <h1>${book.name}</h1>
-                    <span>${book.country}</span>
-                    <span>${book.phone}</span>
+                    <h1>${book.title}</h1>
+                    <span>${book.author}</span>
+                    <span>${book.description}</span>
                     <a href="${book.website}">Visit website</a>
                 </div>
             </article>
