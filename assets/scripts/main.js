@@ -10,7 +10,6 @@ function renderPersons(persons) {
     console.log(persons);
     persons.forEach((person) => {
         personsContainer.innerHTML += `
-            <div class="section_persons"> 
             <article class="personss">
                 <figure class="person__poster">
                     <img src="${person.image}" alt="Person Poster" >
@@ -22,7 +21,6 @@ function renderPersons(persons) {
                     <a href="${person.website}">Visit website</a>
                 </div>
             </article>
-            </div>
         `;
     });
 }
@@ -31,7 +29,6 @@ function renderCompanies(companies) {
   //.map ?!
 companies.forEach((company) => {
     companiesContainer.innerHTML += `
-        <div class="section_companies">
         <article class="companyy">
             <figure class="company__poster">
                 <img src="${company.image}" alt="Company Poster">
@@ -43,7 +40,6 @@ companies.forEach((company) => {
                     <a href="${company.website}">Visit website</a>
                 </div>
             </article>
-            </div>
         `;
     });
 }
@@ -52,7 +48,6 @@ function renderBooks(books) {
 // calling 
     books.forEach((book) => {
         booksContainer.innerHTML += `
-        <div class="section_books">
         <article class="bookss">
             <figure class="book__poster">
                 <img src="${book.image}" alt="Book Poster" >
@@ -64,7 +59,6 @@ function renderBooks(books) {
                     <a href="${book.website}">Visit website</a>
                 </div>
             </article>
-            </div>
         `;
     })
 }
