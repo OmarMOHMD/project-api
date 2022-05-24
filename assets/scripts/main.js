@@ -131,8 +131,25 @@ function preventDefault(event) {
 function searchPersons(event) {
     const searchInput = event.target;
 
-    const matchedPersons = persons.filter(person => person.firstname.toLowerCase().includes(searchInput.value) || person.lastname.toLowerCase().includes(searchInput.value));
+    const matchedPersons = persons.filter(person => person.firstname.toLowerCase().includes(searchInput.value) || person.lastname.toUpperCase().toLowerCase().includes(searchInput.value));
 console.log(searchPersons);
     renderPersons(matchedPersons);
 }
+
+function searchCompanies(event) {
+    const searchInput = event.target;
+
+    const matchedCompanies = companies.filter(company => company.name.toLowerCase().includes(searchInput.value) || company.email.toUpperCase().toLowerCase().includes(searchInput.value));
+    console.log(searchCompanies);
+    renderCompanies(matchedCompanies);
+}
+
+function searchBooks(event) {
+    const searchInput = event.target;
+
+    const matchedBooks = books.filter(book => book.author.toLowerCase().includes(searchInput.value) || book.title.toUpperCase().toLowerCase().includes(searchInput.value));
+    console.log(searchBooks);
+    renderBooks(matchedBooks);
+}
+
 

@@ -81,7 +81,6 @@ background-color: rgba(202, 206, 245, 0.225);
     height: 7vh;
     width: 80%;
     margin-left: 5px;
-    font-style: italic;
 }
 
 @media (max-width:600px){
