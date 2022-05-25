@@ -65,7 +65,7 @@ background-color: rgba(202, 206, 245, 0.225);
 
 @media (max-width:880px) {
     .form_style {
-        height: 19vh;
+        height: 22vh;
     }
 
     .form_container {
@@ -90,8 +90,9 @@ background-color: rgba(202, 206, 245, 0.225);
 }
 
 @media (max-width:600px){
-    .companies_search{
-        font-size: 1rem;
+    .companies_search {
+        font-size: .9rem;
+        padding: 20px;
     }
 
     .company_btn{
@@ -111,7 +112,7 @@ background-color: rgba(202, 206, 245, 0.225);
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 400;
-    padding: 15px 30px;
+    padding: 12px 25px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -177,7 +178,7 @@ background-color: rgba(202, 206, 245, 0.225);
     align-items: center;
     width: 80px;
     height: 80px;
-    border: 6px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 50%;
     margin-bottom: 10px;
     -webkit-background-size: cover;
