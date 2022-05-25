@@ -42,12 +42,13 @@ background-color: rgba(202, 206, 245, 0.225);
 
 .form_style {
     display: flex;
-    height: 30vh;
+    height: 16vh;
     align-items: center;
     justify-content: center;
 }
 
 .form_container {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     font-size: 1.1rem;
@@ -62,10 +63,15 @@ background-color: rgba(202, 206, 245, 0.225);
     width: 60%;
 }
 
-@media (max-width:830px) {
+@media (max-width:880px) {
+    .form_style {
+        height: 19vh;
+    }
+
     .form_container {
         width: 75%;
         height: 8rem;
+        padding: 0;
     }
 
     .company_btn {
