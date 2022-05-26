@@ -40,6 +40,8 @@ background-color: rgba(202, 206, 245, 0.225);
     scroll-behavior: smooth;
 }
 
+/* @media (max-width:) */
+
 .form_style {
     display: flex;
     height: 16vh;
@@ -67,11 +69,17 @@ background-color: rgba(202, 206, 245, 0.225);
     .form_style {
         height: 22vh;
     }
+}
 
     .form_container {
         width: 75%;
-        height: 8rem;
         padding: 0;
+    }
+
+
+@media (max-width:600px) {
+    .form_container {
+        height: 8rem;
     }
 
     .company_btn {
@@ -84,7 +92,6 @@ background-color: rgba(202, 206, 245, 0.225);
     border: 1px solid rgb(53, 103, 173);
     border-radius: 10px;
     font-weight: 300;
-    height: 7vh;
     width: 80%;
     margin-left: 5px;
 }
