@@ -199,7 +199,7 @@ background-color: rgba(202, 206, 245, 0.225);
 
 .personss:hover , .companyy:hover , .bookss:hover ,
 .personss:focus , .companyy:focus , .bookss:focus {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     transition: .8s ;
     cursor: pointer;
     scroll-behavior: smooth;
