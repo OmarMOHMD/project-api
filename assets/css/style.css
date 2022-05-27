@@ -177,7 +177,7 @@ background-color: rgba(202, 206, 245, 0.225);
 }
 
 .personss ,.companyy ,.bookss {
-    width: 100%;
+    width: 90%;
     align-items: center;
     border-radius:30px;
     box-shadow: 10px 21px 35px 0px rgba(28, 43, 75, 0.521);
@@ -185,13 +185,14 @@ background-color: rgba(202, 206, 245, 0.225);
     text-align: center;
     margin: 20px 0;
     padding: 20px;
-    transition: 0.3s;
 }
 
-.personss:hover ,.companyy:hover ,.bookss:hover {
-    transform: translateY(-20px);
-    transition: .7s;
+.personss:hover , .companyy:hover , .bookss:hover ,
+.personss:focus , .companyy:focus , .bookss:focus {
+    transform: translateY(-15px);
+    transition: .8s ;
     cursor: pointer;
+    scroll-behavior: smooth;
 }
 
 .person__poster img ,.company__poster img ,.book__poster img {
