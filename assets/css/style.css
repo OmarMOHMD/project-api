@@ -54,7 +54,7 @@ background-color: rgba(202, 206, 245, 0.225);
 
 .form_style {
     display: flex;
-    height: 16vh;
+    height: 12vh;
     align-items: center;
     justify-content: center;
 }
@@ -76,7 +76,17 @@ background-color: rgba(202, 206, 245, 0.225);
 
 @media (max-width:880px) {
     .form_style {
-        height: 22vh;
+        height: 10vh;
+    }    
+    .form_container {
+        width: 75%;
+        padding: 0;
+    }
+}
+
+@media (max-width:350px) {
+    .form_style {
+        height: 20vh;
     }    
     .form_container {
         width: 75%;
