@@ -98,7 +98,7 @@ background-color: rgba(202, 206, 245, 0.225);
 @media (max-width:350px) {
     .form_style {
         margin-bottom: 50px;
-        height: 30vh;
+        height: 50vh;
     }    
     .form_container {
         width: 75%;
