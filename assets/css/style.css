@@ -95,10 +95,10 @@ background-color: rgba(202, 206, 245, 0.225);
     }
 }
 
-@media (max-width:350px) {
+@media (max-width:450px) {
     .form_style {
-        margin-bottom: 50px;
-        height: 50vh;
+        margin-bottom: 12px;
+        height: 24vh;
     }    
     .form_container {
         width: 75%;
