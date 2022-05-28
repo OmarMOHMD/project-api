@@ -42,6 +42,7 @@ background-color: rgba(202, 206, 245, 0.225);
 @media (max-width:350px){
     .persons_heading {
         font-size: 1rem;
+        padding: bottom 10px; ;
     }
 }
 
