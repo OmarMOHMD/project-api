@@ -209,13 +209,13 @@ background-color: rgba(202, 206, 245, 0.225);
     padding: 20px;
 }
 
-.personss:hover , .companyy:hover , .bookss:hover ,
+/* .personss:hover , .companyy:hover , .bookss:hover ,
 .personss:focus , .companyy:focus , .bookss:focus {
     transform: translateY(-10px);
     transition: .8s ;
     cursor: pointer;
     scroll-behavior: smooth;
-}
+} */
 
 .person__poster img ,.company__poster img ,.book__poster img {
     align-items: center;
