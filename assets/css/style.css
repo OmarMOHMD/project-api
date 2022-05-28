@@ -33,15 +33,17 @@ background-color: rgba(202, 206, 245, 0.225);
     text-decoration:none;
 }
 
-@media (max-width:850px){
+@media (max-width:850px) {
     .persons_heading {
         font-size: 1.1rem;
     }
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
     .persons_heading {
         font-size: 1rem;
+    }
+    header {
         padding:20px;
     }
 }
