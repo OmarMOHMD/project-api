@@ -94,6 +94,16 @@ background-color: rgba(202, 206, 245, 0.225);
     }
 }
 
+@media (max-width:350px) {
+    .form_style {
+        height: 30vh;
+    }    
+    .form_container {
+        width: 75%;
+        padding: 0;
+    }
+}
+
 @media (max-width:600px) {
     .form_container {
         height: 8rem;
