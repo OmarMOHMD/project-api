@@ -70,49 +70,44 @@ background-color: rgba(202, 206, 245, 0.225);
     align-items: center;
     justify-content:center ;
     gap: 10px;
-    height: 5em;
-    width: 60%;
+    height: 4.5em;
+    width: 66%;
 }
 
 @media (max-width:880px) {
     .form_style {
-        height: 10vh;
+        height: 20vh;
     }    
     .form_container {
-        width: 75%;
+        width: 70%;
         padding: 0;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:633px) {
     .form_style {
-        
-        height: 25vh;
+        height: 30vh;
     }    
     .form_container {
-        width: 75%;
+        width: 65%;
         padding: 0;
+    }
+    .company_btn {
+        flex: content;
+    }
+    .form_container {
+        height: 8rem;
     }
 }
 
 @media (max-width:450px) {
     .form_style {
         margin-bottom: 12px;
-        height: 24vh;
+        height: 26vh;
     }    
     .form_container {
-        width: 75%;
+        width: 70%;
         padding: 0;
-    }
-}
-
-@media (max-width:600px) {
-    .form_container {
-        height: 8rem;
-    }
-
-    .company_btn {
-        flex: content;
     }
 }
 
@@ -144,8 +139,6 @@ background-color: rgba(202, 206, 245, 0.225);
 .companies_search:hover ,
 .companies_search:focus {
     border: 2px solid #277BCC; 
-    transition: .5s;
-    scroll-behavior: smooth;
 } 
 
 
